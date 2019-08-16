@@ -17,25 +17,25 @@
 	  margin: 0;
 	  box-sizing: border-box;
       }
-  .footer {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 10vw;
-      height: 17vw;
-      background-color: black;
-      color: white;
-      text-align: center;
+      .footer {
+	  position: fixed;
+	  left: 0;
+	  bottom: 0;
+	  width: 10vw;
+	  height: 17vw;
+	  background-color: black;
+	  color: white;
+	  text-align: center;
       }
       
       .i1 {
 	  background: #77cc62;
       }
-
+      
       #i0 {
 	  background: #f0d848;
       }
-
+      
       #i1 {
 	  background: #5280c7;
       }
@@ -43,31 +43,31 @@
       #i2 {
 	  background: #fa8c82;
       }
-
+      
       #i3 {
 	  background: #f23a3a;
       }
-
+      
       #i4 {
 	  background: #77cc62;
       }
-
+      
       #i5 {
 	  background: #f0d848;
       }
-
+      
       #i6 {
 	  background: #5280c7;
       }
-
+      
       #i7 {
 	  background: #fa8c82;
       }
-
+      
       #i8 {
 	  background: #f23a3a;
       }
-
+      
       #i9 {
 	  background: #77cc62;
       }
@@ -76,11 +76,11 @@
       }
       
       .credits {
-      font-family: "Courier New", serif;
-      font-size: 12px;
-      background-image: url("ataxic.svg");
+	  font-family: "Courier New", serif;
+	  font-size: 12px;
+	  background-image: url("ataxic.svg");
       }
-
+      
       #creds {
 	  color: white;
 	  opacity: 1 !important;
@@ -89,31 +89,31 @@
       
       
       .lyrics {
-      font-family: "Courier New", serif;
-      font-size: 10px;
-      color: white;
-      overflow: scroll;
-      text-align: right;
-      padding: 10px;
-      margin: 10px;
-      background-color:rgba(0,0,0,0);
+	  font-family: "Courier New", serif;
+	  font-size: 10px;
+	  color: white;
+	  overflow: scroll;
+	  text-align: right;
+	  padding: 10px;
+	  margin: 10px;
+	  background-color:rgba(0,0,0,0);
       }
       
       body, html {
-      height: 100vh;
-      background-color: grey;
+	  height: 100vh;
+	  background-color: grey;
       }
-
+      
       ul, li {
-      list-style: none;
+	  list-style: none;
       }
-            
+      
       #player {
 	  position: relative;
 	  margin-left: 100vw;
 	  top:0;
       }
-  
+      
       #foot {
 	  text-align: right;
       }
@@ -130,99 +130,99 @@
 	  text-shadow: 1px 1px green;
 	  padding: 2px;
       }
-
+      
       ul {
 	  opacity: 1;
       }
-      	 
-	 main {
-	     height: 100vh;
-	 }
-	 
-	 audio {
-	     display: none;
-	 }
-	 
-	 .btn {
-	     opacity: .2;
-	     width: 5vw;
-	 }
-	 
-	 
-	 #cont {
-	     display: inline-grid;
-	     position: fixed;
-		 text-align: center;
-		 margin-left: auto;
-		 margin-top: auto;
-		 bottom: 0;
-		 grid-template-areas:
-		     "play rw"
-			 "mute ff";
-		 grid-template-columns: 50vw 50vw;
-		 grid-template-rows: 10vh 10vh;
-		 justify-items: stretch;
-		 align-items: stretch;
-		 font-family: VT323, mono;
-		 color: lightgreen;
-		 text-shadow: 1px 1px green;
-		 background: rgba(0,0,0,.7);
-	     }
-	     
-	       #playz {
-		 display: block;
-		 grid-area: play;
-	     }
-	     
-	     #pauze {
-		 grid-area: play;
-		 visibility: hidden;
-	     }
-
-	     #mutez {
-		 grid-area: mute;
-		 visibility: visible;
-	     }
-
-
-	     #rwz {
-		 grid-area: rw;
-	     }
-
-	     #ffz {
-		 grid-area: ff;
-	     }
-	     
-	 .typewriter {
-	     width: 100vw;
-	     overflow: hidden; /* Ensures the content is not revealed until the animation */
-	     border-right: .15em solid green; /* The typwriter cursor */
-	     white-space: nowrap; /* Keeps the content on a single line */
-	     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	     letter-spacing: .15em; /* Adjust as needed */
-	     animation: 
-		 typing 3.5s steps(40, end),
-		 blink-caret .75s step-end infinite;
-	 }
-	 
-	 /* The typing effect */
-	 @keyframes typing {
-	     from { width: 0 }
-	     to { width: 100vw}
-	 }
-	 
-	 /* The typewriter cursor effect */
-	 @keyframes blink-caret {
-	     from, to { border-color: transparent }
-	     50% { border-color: green; }
-	 }
-
-	 div {
-	           background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-	 }
+      
+      main {
+	  height: 100vh;
+      }
+      
+      audio {
+	  display: none;
+      }
+      
+      .btn {
+	  opacity: .2;
+	  width: 5vw;
+      }
+      
+      
+      #cont {
+	  display: inline-grid;
+	  position: fixed;
+	  text-align: center;
+	  margin-left: auto;
+	  margin-top: auto;
+	  bottom: 0;
+	  grid-template-areas:
+	      "play ff"
+		  "mute rw";
+	  grid-template-columns: 50vw 50vw;
+	  grid-template-rows: 10vh 10vh;
+	  justify-items: stretch;
+	  align-items: stretch;
+	  font-family: VT323, mono;
+	  color: lightgreen;
+	  text-shadow: 1px 1px green;
+	  background: rgba(0,0,0,.7);
+      }
+      
+      #playz {
+	  display: block;
+	  grid-area: play;
+      }
+      
+      #pauze {
+	  grid-area: play;
+	  visibility: hidden;
+      }
+      
+      #mutez {
+	  grid-area: mute;
+	  visibility: visible;
+      }
+      
+      
+      #rwz {
+	  grid-area: rw;
+      }
+      
+      #ffz {
+	  grid-area: ff;
+      }
+      
+      .typewriter {
+	  width: 100vw;
+	  overflow: hidden; /* Ensures the content is not revealed until the animation */
+	  border-right: .15em solid green; /* The typwriter cursor */
+	  white-space: nowrap; /* Keeps the content on a single line */
+	  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	  letter-spacing: .15em; /* Adjust as needed */
+	  animation: 
+	      typing 3.5s steps(40, end),
+	      blink-caret .75s step-end infinite;
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+	  from { width: 0 }
+	  to { width: 100vw}
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+	  from, to { border-color: transparent }
+	  50% { border-color: green; }
+      }
+      
+      div {
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: contain;
+      }
     </style>
   </head>
   <body id="body">
@@ -242,19 +242,28 @@
 	<br>
 	<br>
 	<br>
-	<h1 >
+	<br>
+<br>
+<br>
+<h1 >
 	  1(boarding)
 	</h1>
       </div>
       <div id="i1" class="album">
-	<h1>
+	<br>
+<br>
+<br>
+<h1>
           2(Night Train)
 	</h1>
 	<p class="lyrics"> You are on the night train, there is noway out.</p>
 	
       </div>
       <div id="i2" class="album">
-	<h1>
+	<br>
+<br>
+<br>
+<h1>
           3(J Ave. Subject)
 	</h1>
 	<p class="lyrics">bother, down to the water<br>
@@ -299,7 +308,10 @@
 	</p>
       </div>
       <div id="i3" class="album">
-        <h1>
+        <br>
+<br>
+<br>
+<h1>
 	  4(Keiko)
         </h1>
 	
@@ -348,12 +360,18 @@
 	</p>
       </div>
       <div id="i4" class="album">
-        <h1>
+        <br>
+<br>
+<br>
+<h1>
           5(Jekyll Chorus)
         </h1>
       </div>
       <div id="i5" class="album">
-        <h1>
+        <br>
+<br>
+<br>
+<h1>
           6(Arranged for Erasure)
         </h1>
 	<p class="lyrics">
@@ -375,33 +393,48 @@
 	  </p>
       </div>
         <div id="i6" class="album">
-          <h1>
+          <br>
+<br>
+<br>
+<h1>
             7(Car to Car)
           </h1>
 
 	</div>
         <div id="i7" class="album">
-          <h1>
+          <br>
+<br>
+<br>
+<h1>
             8(Warning, Wicked Fool)
           </h1>
 	  <p class="lyrics">There were times when the woodland creatures did not gather vine or nut or olive branch</br>	And a time when the women did not gather frolic</br>	The misers and misters all crumbled in the hedge</br>	The forest laid atrophy straps on the men</br>	Gave weak, emerald sun glances to the children</br>	For beaconing the water nymph to the cold</br>	The day came to untouch the fall leaf from the brow</br>	Awaken the dew dropluminance upon the day set</br>	Make miraculous the hand holding and eye grabbing of the</br>	thick bossommed sleep snatchers</br>	Merry, weird and merry languished the fingers of undressing</br>	The merrier to the finger go deep</br>	In droves, slacky eye, red jaw, frumping to the coast</br>	Where the cliffs they stumbled two feet by two foot</br>	stumbled in droves to the coast below</br>	And the matrons cat clamored and high noon</br>	Unbossomed their laundries in misty wind</br>	And set forth a</br>	bawdy</br>	catch all</br>	undrawered</br>	cyclopean</br>	frothy lipped</br>	tongue flicking</br>	As their unbottomed hole faces spat on the bodies below</br></br>	two lips by two slits</br>	split and</br>	spit and</br>	split and</br>spit
 	</p>
 	  </div>
-	  <div >
-	    <h1 id="i8" class="album">
+	  <div class="album" id="i8">
+	    <br>
+<br>
+<br>
+<h1>
 	      9(Next End Line)
 	    </h1>
 	  </div>
 	  <div >
-	    <h1 id="i9" class="album">
+	    <br>
+<br>
+<br>
+<h1 id="i9" class="album">
 	      10(Deboarding)
 	    </h1>
 	  </div>
 	  <div class="parallax  credits album">
-	    <br>
-	    <br>
-	    <br>
 	    <ul id="creds">
+	      <br>
+	      <br>
+	      <br>
+	      <h1>
+		.(credits)
+	      </h1>
 	      <li>Ataxic Respiration is:</li>
 	      <li>Christopher Brown</li>
 	      <br>
@@ -417,12 +450,6 @@
 	      <li>Recorded in Yucca Valley, California. Composed using <a href="https://www.audacityteam.org/">Audacity v2.1.2</a> and <a href="https://lmms.io/">LMMS v1.2.0</a></li>
 	      <li>2019 &copy; Christopher Brown</li>
 	    </ul>
-	    <br>
-	    <br>
-	    <br>
-	    <h1>
-	      .(credits)
-	    </h1>
 	  </div>	    
     </main>
     <script src="scripts.js" ></script>

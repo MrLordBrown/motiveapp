@@ -1,15 +1,15 @@
 document.getElementById("audio").addEventListener("ended", next2);
 var items = [
-    "01Boarding.mp3",
-    "02NightTrain.mp3",
-    "03JAvenueSubject.mp3",
-    "04Keiko.mp3",
-    "05JekyllChorus.mp3",
-    "06ArrangedForErasure.mp3",
-    "07CarToCar.mp3",
-    "08WarningWickedFool.mp3",
-    "09NextEndLine.mp3",
-    "10Deboarding.mp3"
+    "Boarding.mp3",
+    "NightTrain.mp3",
+    "JAvenueSubject.mp3",
+    "Keiko.mp3",
+    "JekyllChorus.mp3",
+    "ArrangedForErasure.mp3",
+    "CarToCar.mp3",
+    "WarningWickedFool.mp3",
+    "NextEndLine.mp3",
+    "Deboarding.mp3"
 ];
 
 
