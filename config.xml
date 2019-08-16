@@ -19,19 +19,19 @@
     <allow-intent href="market:*" />
   </platform>
   <platform name="android">
-    <icon src="36.png" density="ldpi" />
-    <icon src="48.png" density="mdpi" />
-    <icon src="72.png" density="hdpi" />
-    <icon src="96.png" density="xhdpi" />
+    <icon src="icon-36-ldpi.png" density="ldpi" />
+    <icon src="icon-48-mdpi.png" density="mdpi" />
+    <icon src="icon-72-hdpi.png" density="hdpi" />
+    <icon src="icon-96-xhdpi.png" density="xhdpi" />
   </platform>
   <platform name="android">
-    <splash src="lhdpi.png" density="land-hdpi" />
-    <splash src="lldpi.png" density="land-ldpi" />
-    <splash src="lmdpi.png" density="land-mdpi" />
-    <splash src="lxhdpi.png" density="land-xhdpi" />
-    <splash src="hdpi.png" density="port-hdpi" />
-    <splash src="ldpi.png" density="port-ldpi" />
-    <splash src="mdpi.png" density="port-mdpi" />
-    <splash src="xhdpi.png" density="port-xhdpi" />
+    <splash src="screen-hdpi-landscape.png" density="land-hdpi" />
+    <splash src="screen-ldpi-landscape.png" density="land-ldpi" />
+    <splash src="screen-mdpi-landscape.png" density="land-mdpi" />
+    <splash src="screen-xhdpi-landscape.png" density="land-xhdpi" />
+    <splash src="screen-hdpi-portrait.png" density="port-hdpi" />
+    <splash src="screen-ldpi-portrait.png" density="port-ldpi" />
+    <splash src="screen-mdpi-portrait.png" density="port-mdpi" />
+    <splash src="screen-xhdpi-portrait.png" density="port-xhdpi" />
   </platform>
  </widget>
