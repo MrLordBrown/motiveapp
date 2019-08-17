@@ -216,6 +216,13 @@
 	  from, to { border-color: transparent }
 	  50% { border-color: green; }
       }
+
+      #spot {
+	  margin-left: 50vw;
+	  margin-top: 50vh;
+	  width: 100vw;
+	  position: fixed;
+      }
       
       div {
 	  background-attachment: fixed;
@@ -223,10 +230,28 @@
 	  background-repeat: no-repeat;
 	  background-size: contain;
       }
+
+      #spot {position: fixed;
+    overflow: hidden;
+    margin-top: 50vh;
+    margin-left: 25vw;
+	    }
+      
+      .iframe {position: absolute;
+	       top: 0;
+	       left: 0;
+	       width: 100%;
+	       height: 100%;
+	       border: 0;
+	      }
+      
     </style>
   </head>
   <body id="body">
     <main>
+      <div id="spot">
+	<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:2NsFHSf5Wtfw4kic7I5E3h&size=detail&theme=light&show-count=0" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+	</div>
       <div class="parallax">
 	<div id="cont">
 	  <div href="#" id="playz" class="nav" onclick="playIt2();">PLAY</div>
@@ -427,7 +452,7 @@
 	      10(Deboarding)
 	    </h1>
 	  </div>
-	  <div class="parallax  credits album">
+	  <div class="credits album">
 	    <ul id="creds">
 	      <br>
 	      <br>
@@ -454,5 +479,6 @@
 	  </div>	    
     </main>
     <script src="scripts.js" ></script>
+    <script src="cordova.js"></script>
   </body>
 </html>

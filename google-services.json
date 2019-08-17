@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "17193508829",
+    "firebase_url": "https://motiveinthenight.firebaseio.com",
+    "project_id": "motiveinthenight",
+    "storage_bucket": "motiveinthenight.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17193508829:android:3a1c9eabc8b1562d",
+        "android_client_info": {
+          "package_name": "com.cordova.motiveinthenight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17193508829-mudgduanfpd731d4t23fsaohmn8lc7p7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF67NFlawo_wozU7VX4C43foFCd9LXBw8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17193508829-mudgduanfpd731d4t23fsaohmn8lc7p7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

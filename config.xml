@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="com.cordova.motiveinthenight" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US">
+<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="com.cordova.motiveinthenight" version="1.0.10" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US" versionCode="1">
   <name>MotiveInTheNight</name>
   <description>The official app for listening to Ataxic Respiration's debut album Motive in the Night</description>
   <author href="https://motiveinthenight.web.app" email="ataxicrespiration@gmail.com">kryz_braun_technologies</author>
   <content src="index.html" />
   <access origin="*" />
   <vs:features />
+  <plugin name="cordova-plugin-splashscreen" spec="~5.0.5" />
   <preference name="SplashScreen" value="screen" />
   <!-- Support for Cordova 5.0.0 plugin system -->
   <plugin name="cordova-plugin-whitelist" version="1" />
@@ -34,4 +35,9 @@
     <splash src="screen-mdpi-portrait.png" density="port-mdpi" />
     <splash src="screen-xhdpi-portrait.png" density="port-xhdpi" />
   </platform>
- </widget>
+  <plugin spec="https://github.com/chemerisuk/cordova-support-google-services.git" src="git"></plugin>
+  <platform name="android">
+    <resource-file src="google-services.json" target="google-services.json"/>
+  </platform>
+  <plugin spec="https://github.com/chemerisuk/cordova-plugin-firebase-analytics.git" src="git"></plugin>
+</widget>
