@@ -38,7 +38,7 @@
   </platform>
   <plugin spec="https://github.com/chemerisuk/cordova-support-google-services.git" src="git"></plugin>
   <platform name="android">
-    <resource-file src="google-services.json" target="google-services.json"/>
+    <resource-file src="google-services.json" target="app/google-services.json"/>
   </platform>
   <plugin spec="https://github.com/chemerisuk/cordova-plugin-firebase-analytics.git" src="git"></plugin>
 </widget>
