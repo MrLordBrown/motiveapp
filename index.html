@@ -2,12 +2,12 @@
 <html lang="en-US">
   <head>
     <title>Ataxic Respiration - Motive in the Night</title>
-     <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
     <link rel="manifest" href="/manifest.json">
-     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-     <meta name="theme-color" content="#cccccc">
+    <meta name="theme-color" content="#cccccc">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="Artist: Ataxic Respiration, Album: Motive in the Night, Tracks: 10">
@@ -89,14 +89,13 @@
       
       
       .lyrics {
+	  height: 100vh;
 	  font-family: "Courier New", serif;
-	  font-size: 10px;
+	  font-size: 2vh;
 	  color: white;
-	  overflow: scroll;
 	  text-align: right;
-	  padding: 10px;
-	  margin: 10px;
 	  background-color:rgba(0,0,0,0);
+	  overflow: auto;
       }
       
       body, html {
@@ -162,7 +161,7 @@
 	  grid-template-columns: 50vw 50vw;
 	  grid-template-rows: 10vh 10vh;
 	  justify-items: stretch;
-	  align-items: stretch;
+	  align-items: center;
 	  font-family: VT323, mono;
 	  color: lightgreen;
 	  text-shadow: 1px 1px green;
@@ -218,9 +217,8 @@
       }
 
       #spot {
-	  margin-left: 50vw;
-	  margin-top: 50vh;
-	  width: 100vw;
+	  margin-left: calc(100vw - 300px);
+	  margin-top: 5vh;
 	  position: fixed;
       }
       
@@ -231,11 +229,6 @@
 	  background-size: contain;
       }
 
-      #spot {position: fixed;
-    overflow: hidden;
-    margin-top: 50vh;
-    margin-left: 25vw;
-	    }
       
       .iframe {position: absolute;
 	       top: 0;
@@ -250,7 +243,7 @@
   <body id="body">
     <main>
       <div id="spot">
-	<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:2NsFHSf5Wtfw4kic7I5E3h&size=detail&theme=light&show-count=0" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+	<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:2NsFHSf5Wtfw4kic7I5E3h&size=detail&theme=light&show-count=0" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
 	</div>
       <div class="parallax">
 	<div id="cont">
@@ -273,21 +266,21 @@
 <h1 >
 	  1(boarding)
 	</h1>
+        <br>
+<br>
+<br>
       </div>
       <div id="i1" class="album">
-	<br>
-<br>
-<br>
+
 <h1>
           2(Night Train)
 	</h1>
 	<p class="lyrics"> You are on the night train, there is noway out.</p>
-	
+        <br>
+<br>
+<br>	
       </div>
       <div id="i2" class="album">
-	<br>
-<br>
-<br>
 <h1>
           3(J Ave. Subject)
 	</h1>
@@ -331,11 +324,11 @@
 	  <br>
 	  You were alright, but now it's later<br>
 	</p>
-      </div>
-      <div id="i3" class="album">
         <br>
 <br>
 <br>
+      </div>
+      <div id="i3" class="album">
 <h1>
 	  4(Keiko)
         </h1>
@@ -373,8 +366,6 @@
 	  How can I stay<br>
 	  Locked away in your past<br>
 	  <br>
-	  ...<br>
-	  <br>
 	  Keiko, don't you fret no<br>
 	  You're just a real girl, a real girl<br>
 	  And I'll love you 'til the end<br>
@@ -383,19 +374,21 @@
 	  You are my real girl<br>
 	  No matter what they said<br>
 	</p>
-      </div>
-      <div id="i4" class="album">
         <br>
 <br>
 <br>
+      </div>
+      <div id="i4" class="album">
+      
 <h1>
           5(Jekyll Chorus)
         </h1>
+              <br>
+<br>
+<br>
       </div>
       <div id="i5" class="album">
-        <br>
-<br>
-<br>
+      
 <h1>
           6(Arranged for Erasure)
         </h1>
@@ -415,42 +408,48 @@
 	  You got this one!<br>
 	  Destroy them!<br>
 	  You can destroy them!<br>
-	  </p>
+        <br>
+<br>
+<br>
+	</p>
       </div>
         <div id="i6" class="album">
-          <br>
-<br>
-<br>
+        
 <h1>
             7(Car to Car)
           </h1>
-
+        <br>
+<br>
+<br>
 	</div>
         <div id="i7" class="album">
-          <br>
-<br>
-<br>
+    
 <h1>
             8(Warning, Wicked Fool)
           </h1>
 	  <p class="lyrics">There were times when the woodland creatures did not gather vine or nut or olive branch</br>	And a time when the women did not gather frolic</br>	The misers and misters all crumbled in the hedge</br>	The forest laid atrophy straps on the men</br>	Gave weak, emerald sun glances to the children</br>	For beaconing the water nymph to the cold</br>	The day came to untouch the fall leaf from the brow</br>	Awaken the dew dropluminance upon the day set</br>	Make miraculous the hand holding and eye grabbing of the</br>	thick bossommed sleep snatchers</br>	Merry, weird and merry languished the fingers of undressing</br>	The merrier to the finger go deep</br>	In droves, slacky eye, red jaw, frumping to the coast</br>	Where the cliffs they stumbled two feet by two foot</br>	stumbled in droves to the coast below</br>	And the matrons cat clamored and high noon</br>	Unbossomed their laundries in misty wind</br>	And set forth a</br>	bawdy</br>	catch all</br>	undrawered</br>	cyclopean</br>	frothy lipped</br>	tongue flicking</br>	As their unbottomed hole faces spat on the bodies below</br></br>	two lips by two slits</br>	split and</br>	spit and</br>	split and</br>spit
 	</p>
-	  </div>
+        <br>
+<br>
+<br>
+	</div>
 	  <div class="album" id="i8">
-	    <br>
-<br>
-<br>
+	
 <h1>
 	      9(Next End Line)
 	    </h1>
+	        <br>
+<br>
+<br>
 	  </div>
 	  <div id="i9" class="album">
-	    <br>
-<br>
-<br>
+	  
 <h1>
 	      10(Deboarding)
 	    </h1>
+	          <br>
+<br>
+<br>
 	  </div>
 	  <div class="credits album">
 	    <ul id="creds">
