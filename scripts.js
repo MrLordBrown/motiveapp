@@ -1,4 +1,13 @@
 document.getElementById("audio").addEventListener("ended", next2);
+//document.getElementByTagName("body").addEventListener("scroll",spot);
+
+//function spot() {
+//    var body = document.getElementByTagName("body");
+//    var album = document.getElementsByClassName("album");
+ //   var spot = document.getElementById("spot");
+//  var bottomSpot = spot.scrollTop - 56;
+
+//    if (bottomSpot >= album.scrollTop && bottomSpot <=  
 var items = [
     "Boarding.mp3",
     "NightTrain.mp3",
@@ -59,7 +68,7 @@ function previous2() {
     document.getElementById("playz").innerHTML = "PAUSE";
     document.getElementById("playz").style.visibility = "hidden";
     document.getElementById("pauze").style.visibility = "visible";
-       jump();
+    jump();
 };
 
 
@@ -73,10 +82,17 @@ function muteIt2() {
     }
 };
 
-
 function playIt2() {
     playlistPlayer.src = items[current];
-    playlistPlayer.play();
+    var playPromise = playlistPlayer.play();
+    if (playPromise !== undefined) {
+	playPromise.then(_ => {
+	    console.log("Promise Resolved");
+	})
+	    .catch(error => {
+		console.log("Promise Unresolved");
+	    });
+    };
     document.getElementById("nowPlaying").innerHTML = items[current];
     document.getElementById("playz").innerHTML = "PAUSE";
     document.getElementById("nowPlaying").classList.remove("typewriter");
@@ -89,7 +105,16 @@ function playIt2() {
 
 
 function pauseIt2() {
-    playlistPlayer.pause();
+    var playPromise = playlistPlayer.play();
+    if (playPromise !== undefined) {
+	playPromise.then(_ => {
+	    console.log("Promise Resolved, Pause Occuring");
+	    playlistPlayer.pause();
+	})
+	    .catch(error => {
+		console.log("Promise Unresolved");
+	    });
+    }
     document.getElementById("nowPlaying").classList.remove("typewriter");
     void document.getElementById("nowPlaying").offsetWidth;
     document.getElementById("nowPlaying").classList.add("typewriter");

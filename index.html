@@ -73,6 +73,8 @@
       }
       .album {
 	  height: 100vh;
+	  padding: 2vw;
+	  margin: 2vw;
       }
       
       .credits {
@@ -89,13 +91,14 @@
       
       
       .lyrics {
+	  position: relative;
 	  height: 100vh;
 	  font-family: "Courier New", serif;
 	  font-size: 2vh;
 	  color: white;
 	  text-align: right;
 	  background-color:rgba(0,0,0,0);
-	  overflow: auto;
+	  overflow: scroll;
       }
       
       body, html {
@@ -128,6 +131,7 @@
 	  color: lightgreen;
 	  text-shadow: 1px 1px green;
 	  padding: 2px;
+	  opacity: .40;
       }
       
       ul {
@@ -218,10 +222,12 @@
 
       #spot {
 	  margin-left: calc(100vw - 300px);
-	  margin-top: 5vh;
+	  margin-top: 25vh;
 	  position: fixed;
+	  text-align: right;
+	  mix-blend-mode: difference;
       }
-      
+            
       div {
 	  background-attachment: fixed;
 	  background-position: center;
@@ -257,9 +263,6 @@
 	<div id="nowPlaying" class="typewriter">Motive in the Night</div>
       </div>
       <div id="i0" class="album">
-	<br>
-	<br>
-	<br>
 	<br>
 <br>
 <br>
@@ -427,7 +430,7 @@
 <h1>
             8(Warning, Wicked Fool)
           </h1>
-	  <p class="lyrics">There were times when the woodland creatures did not gather vine or nut or olive branch</br>	And a time when the women did not gather frolic</br>	The misers and misters all crumbled in the hedge</br>	The forest laid atrophy straps on the men</br>	Gave weak, emerald sun glances to the children</br>	For beaconing the water nymph to the cold</br>	The day came to untouch the fall leaf from the brow</br>	Awaken the dew dropluminance upon the day set</br>	Make miraculous the hand holding and eye grabbing of the</br>	thick bossommed sleep snatchers</br>	Merry, weird and merry languished the fingers of undressing</br>	The merrier to the finger go deep</br>	In droves, slacky eye, red jaw, frumping to the coast</br>	Where the cliffs they stumbled two feet by two foot</br>	stumbled in droves to the coast below</br>	And the matrons cat clamored and high noon</br>	Unbossomed their laundries in misty wind</br>	And set forth a</br>	bawdy</br>	catch all</br>	undrawered</br>	cyclopean</br>	frothy lipped</br>	tongue flicking</br>	As their unbottomed hole faces spat on the bodies below</br></br>	two lips by two slits</br>	split and</br>	spit and</br>	split and</br>spit
+	  <p class="lyrics">There were times when the woodland creatures did not gather vine or nut or olive branch</br>	And a time when the women did not gather frolic</br>	The misers and misters all crumbled in the hedge</br>	The forest laid atrophy straps on the men</br>	Gave weak, emerald sun glances to the children</br>	For beaconing the water nymph to the cold</br>	The day came to untouch the fall leaf from the brow</br>	Awaken the dew-drop luminance upon the day set</br>	Make miraculous the hand holding and eye grabbing of the</br>	thick bossommed sleep snatchers</br>	Merry, weird and merry languished the fingers of undressing</br>	The merrier to the finger go deep</br>	In droves, slacky eye, red jaw, frumping to the coast</br>	Where the cliffs they stumbled two feet by two foot</br>	stumbled in droves to the coast below</br>	And the matrons cat clamored and high noon</br>	Unbossomed their laundries in misty wind</br>	And set forth a</br>bawdy, catch all, undrawered, cyclopean, frothy-lipped, tongue flicking</br>	As their unbottomed hole faces spat on the bodies below</br>two lips by two slits, split and spit and split and spit
 	</p>
         <br>
 <br>
@@ -456,10 +459,7 @@
 	      <br>
 	      <br>
 	      <br>
-	      <h1>
-		.(credits)
-	      </h1>
-		<br>
+	      	<br>
 	      <li>Ataxic Respiration is:</li>
 	      <li>Christopher Brown</li>
 	      <br>
@@ -473,7 +473,10 @@
 	      <li>My Dearest Automaton, Keiko</li>
 	      <br>
 	      <li>Recorded in Yucca Valley, California. Composed using <a href="https://www.audacityteam.org/">Audacity v2.1.2</a> and <a href="https://lmms.io/">LMMS v1.2.0</a></li>
-	      <li>2019 &copy; Christopher Brown</li>
+	      <li>2019 &copy; Ataxic Respiration</li>
+<br>	      <h1>
+		.(credits)
+	      </h1>
 	    </ul>
 	  </div>	    
     </main>
