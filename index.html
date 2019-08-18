@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <script>
+      // This is the service worker with the Cache-first network
+      
+      // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+      
+      // Check compatibility for the browser we're running this in
+      if ("serviceWorker" in navigator) {
+	  if (navigator.serviceWorker.controller) {
+	      console.log("[PWA Builder] active service worker found, no need to register");
+	  } else {
+	      // Register the service worker
+	      navigator.serviceWorker
+		  .register("pwabuilder-sw.js", {
+		      scope: "./"
+		  })
+		  .then(function (reg) {
+		      console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+		  });
+	  }
+      }
+    </script>
     <title>Ataxic Respiration - Motive in the Night</title>
     <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <meta name="theme-color" content="#cccccc">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="Artist: Ataxic Respiration, Album: Motive in the Night, Tracks: 10">
@@ -150,8 +166,7 @@
 	  opacity: .2;
 	  width: 5vw;
       }
-      
-      
+            
       #cont {
 	  display: inline-grid;
 	  position: fixed;
@@ -235,14 +250,18 @@
 	  background-size: contain;
       }
 
+      .nav {
+	  cursor: crosshair;
+      }
       
-      .iframe {position: absolute;
-	       top: 0;
-	       left: 0;
-	       width: 100%;
-	       height: 100%;
-	       border: 0;
-	      }
+      .iframe {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  border: 0;
+      }
       
     </style>
   </head>
@@ -259,7 +278,7 @@
 	  <div href="#" id="ffz" class="nav" onclick="next2();">NEXT</div>
 	  <div href="#" id="mutez" class="nav" onclick="muteIt2();">MUTE</div>
 	</div>
-	<audio id="audio" ></audio> 
+	<audio id="audio"></audio> 
 	<div id="nowPlaying" class="typewriter">Motive in the Night</div>
       </div>
       <div id="i0" class="album">
@@ -480,6 +499,24 @@
 	    </ul>
 	  </div>	    
     </main>
+    <script>
+      const firebaseConfig = {
+	  apiKey: "AIzaSyDl5ZBXddHLwr4jPcEvt95dCLyiB4eojm4",
+	  authDomain: "motiveinthenight.firebaseapp.com",
+	  databaseURL: "https://motiveinthenight.firebaseio.com",
+	  projectId: "motiveinthenight",
+	  storageBucket: "",
+	  messagingSenderId: "17193508829",
+	  appId: "1:17193508829:web:5fab02d22068f4e3"
+      };
+    </script>
+    <script src="/__/firebase/6.4.0/firebase-app.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+	 https://firebase.google.com/docs/web/setup#reserved-urls -->
+    
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
     <script src="scripts.js" ></script>
     <script src="cordova.js"></script>
   </body>

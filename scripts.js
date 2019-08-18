@@ -50,7 +50,7 @@ function next2() {
 function jump() {
     var jumpTo = items.indexOf(items[current]);
     window.location.href = "#i"+jumpTo;
-}
+};
 
 
 function previous2() {
@@ -84,15 +84,7 @@ function muteIt2() {
 
 function playIt2() {
     playlistPlayer.src = items[current];
-    var playPromise = playlistPlayer.play();
-    if (playPromise !== undefined) {
-	playPromise.then(_ => {
-	    console.log("Promise Resolved");
-	})
-	    .catch(error => {
-		console.log("Promise Unresolved");
-	    });
-    };
+    playlistPlayer.play();
     document.getElementById("nowPlaying").innerHTML = items[current];
     document.getElementById("playz").innerHTML = "PAUSE";
     document.getElementById("nowPlaying").classList.remove("typewriter");
@@ -105,16 +97,7 @@ function playIt2() {
 
 
 function pauseIt2() {
-    var playPromise = playlistPlayer.play();
-    if (playPromise !== undefined) {
-	playPromise.then(_ => {
-	    console.log("Promise Resolved, Pause Occuring");
-	    playlistPlayer.pause();
-	})
-	    .catch(error => {
-		console.log("Promise Unresolved");
-	    });
-    }
+    playlistPlayer.pause();
     document.getElementById("nowPlaying").classList.remove("typewriter");
     void document.getElementById("nowPlaying").offsetWidth;
     document.getElementById("nowPlaying").classList.add("typewriter");
